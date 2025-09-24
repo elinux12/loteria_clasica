@@ -1,24 +1,23 @@
-/* line 1, /stdin */
 html, body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  height: 100%; }
+  height: 100%;
+}
 
-/* line 7, /stdin */
 *, *::before, *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-/* line 11, /stdin */
 .loteria {
   height: 100%;
   width: 100vw;
   background: #e949a1;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
-/* line 19, /stdin */
 .loteria__contenedor {
   background: #f2f2f2;
   max-height: 1000px;
@@ -29,50 +28,145 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); }
-  /* line 31, /stdin */
-  .loteria__contenedor__titulo_principal {
-    margin: 0;
-    padding: 0;
-    font-size: 1.2rem;
-    color: #333;
-    width: auto;
-    height: 60px; }
-  /* line 40, /stdin */
-  .loteria__contenedor__contenido {
-    height: 500px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px; }
-    /* line 49, /stdin */
-    .loteria__contenedor__contenido__fichas_clasicas {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center; }
-    /* line 59, /stdin */
-    .loteria__contenedor__contenido__fichas_modernas {
-      border-left: 1px solid rgba(0, 0, 0, 0.2);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      height: 100%; }
-    /* line 68, /stdin */
-    .loteria__contenedor__contenido__titulo_secundario {
-      text-align: center; }
-  /* line 72, /stdin */
-  .loteria__contenedor__btn {
-    display: block;
-    margin-bottom: 25px; }
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+.loteria__contenedor__titulo_principal {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #333;
+  width: auto;
+  height: 60px;
+}
+.loteria__contenedor__contenido {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.loteria__contenedor__contenido__fichas_clasicas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.loteria__contenedor__contenido__fichas_modernas {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.loteria__contenedor__contenido__titulo_secundario {
+  text-align: center;
+}
+.loteria__contenedor__btn {
+  display: block;
+  margin-bottom: 25px;
+}
 
-/* line 78, /stdin */
 .ficha-img {
   width: 350px;
-  height: 350px; }
+  height: 350px;
+}
+
+/*
+@media (max-width: 1024px) and (orientation: portrait) {
+  .loteria__contenedor {
+    width: 90%;
+    height: 90%;
+
+    &__titulo_principal {
+      font-size: 1rem;
+    }
+
+    &__contenido {
+      flex-direction: column;
+
+      &__fichas_clasicas,
+      &__fichas_modernas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__titulo_secundario {
+        font-size: 0.95rem;
+      }
+    }
+
+    &__btn {
+      margin-bottom: 15px;
+    }
+  }
+
+  .ficha-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+*/
+@media (max-width: 600px) and (orientation: portrait) {
+  .loteria__contenedor {
+    width: 95%;
+    height: 95%;
+  }
+  .loteria__contenedor__titulo_principal {
+    font-size: 0.9rem;
+    height: auto;
+  }
+  .loteria__contenedor__contenido {
+    height: auto;
+    flex-direction: column;
+  }
+  .loteria__contenedor__contenido__fichas_clasicas, .loteria__contenedor__contenido__fichas_modernas {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .loteria__contenedor__contenido__titulo_secundario {
+    font-size: 0.85rem;
+  }
+  .loteria__contenedor__btn {
+    margin-bottom: 10px;
+  }
+  .ficha-img {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) and (orientation: portrait) {
+  .loteria__contenedor {
+    width: 95%;
+    height: 95%;
+  }
+  .loteria__contenedor__titulo_principal {
+    font-size: 0.9rem;
+    height: auto;
+  }
+  .loteria__contenedor__contenido {
+    height: auto;
+    flex-direction: column;
+  }
+  .loteria__contenedor__contenido__fichas_clasicas, .loteria__contenedor__contenido__fichas_modernas {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .loteria__contenedor__contenido__titulo_secundario {
+    font-size: 0.85rem;
+  }
+  .loteria__contenedor__btn {
+    margin-bottom: 10px;
+  }
+  .ficha-img {
+    width: 350px;
+    height: 350px;
+  }
+}

@@ -80,3 +80,112 @@ html,body{
   height: 350px;
 }
 
+// Aqui inician las medias queries
+/*
+@media (max-width: 1024px) and (orientation: portrait) {
+  .loteria__contenedor {
+    width: 90%;
+    height: 90%;
+
+    &__titulo_principal {
+      font-size: 1rem;
+    }
+
+    &__contenido {
+      flex-direction: column;
+
+      &__fichas_clasicas,
+      &__fichas_modernas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__titulo_secundario {
+        font-size: 0.95rem;
+      }
+    }
+
+    &__btn {
+      margin-bottom: 15px;
+    }
+  }
+
+  .ficha-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+*/
+@media (max-width: 600px) and (orientation: portrait){
+  .loteria__contenedor {
+    width: 95%;
+    height: 95%;
+
+    &__titulo_principal {
+      font-size: 0.9rem;
+      height: auto;
+    }
+
+    &__contenido {
+      height: auto;
+      flex-direction: column;
+
+      &__fichas_clasicas,
+      &__fichas_modernas {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      &__titulo_secundario {
+        font-size: 0.85rem;
+      }
+    }
+
+    &__btn {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ficha-img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) and (orientation: portrait){
+  .loteria__contenedor {
+    width: 95%;
+    height: 95%;
+
+    &__titulo_principal {
+      font-size: 0.9rem;
+      height: auto;
+    }
+
+    &__contenido {
+      height: auto;
+      flex-direction: column;
+
+      &__fichas_clasicas,
+      &__fichas_modernas {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      &__titulo_secundario {
+        font-size: 0.85rem;
+      }
+    }
+
+    &__btn {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ficha-img {
+    width: 350px;
+    height: 350px;
+  }
+}

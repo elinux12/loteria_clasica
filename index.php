@@ -21,7 +21,7 @@
           </div>  
         </div>
         <button class="loteria__contenedor__btn" id="loteria_btn">Cantar loteria</button>
-        <input type="text" name="" id="inputNumeroFicha" value="Número de Ficha" />
+        <input type="text" name="" id="inputNumeroFicha" value="" placeholder="Número de Ficha" />
       </div>
     </div>
   </head>
