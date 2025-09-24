@@ -170,3 +170,30 @@ html, body {
     height: 350px;
   }
 }
+@media (max-width: 540px) and (max-height: 800px) and (orientation: portrait) {
+  .loteria__contenedor {
+    width: 95%;
+    height: 95%;
+  }
+  .loteria__contenedor__titulo_principal {
+    font-size: 0.9rem;
+  }
+  .loteria__contenedor__contenido {
+    height: auto;
+    flex-direction: column;
+  }
+  .loteria__contenedor__contenido__fichas_clasicas, .loteria__contenedor__contenido__fichas_modernas {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .loteria__contenedor__contenido__titulo_secundario {
+    font-size: 0.85rem;
+  }
+  .loteria__contenedor__btn {
+    margin-bottom: 10px;
+  }
+  .ficha-img {
+    width: 200px;
+    height: 200px;
+  }
+}

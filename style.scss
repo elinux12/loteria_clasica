@@ -129,7 +129,7 @@ html,body{
     }
 
     &__contenido {
-      height: auto;
+     height: auto;
       flex-direction: column;
 
       &__fichas_clasicas,
@@ -187,5 +187,41 @@ html,body{
   .ficha-img {
     width: 350px;
     height: 350px;
+  }
+}
+
+@media (max-width: 540px) and (max-height: 800px) and (orientation: portrait){
+  .loteria__contenedor {
+    width: 95%;
+    height: 95%;
+
+    &__titulo_principal {
+      font-size: 0.9rem;
+      //height: auto;
+    }
+
+    &__contenido {
+     height: auto;
+      flex-direction: column;
+
+      &__fichas_clasicas,
+      &__fichas_modernas {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      &__titulo_secundario {
+        font-size: 0.85rem;
+      }
+    }
+
+    &__btn {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ficha-img {
+    width: 200px;
+    height: 200px;
   }
 }
